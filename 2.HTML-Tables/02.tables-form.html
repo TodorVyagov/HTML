@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Tables and Forms</title>
+</head>
+<body>
+	<form method="get" action="apply-now.php">
+	<table><!-- I used table because the homework is from the lecture Tables -->
+		<tr>
+			<td><label for="mn">Member name:</label></td>
+			<td>
+				<input type="text" name="memberName" id="mn" 
+				placeholder="Enter your name." required="required" autofocus="autofocus" />
+			</td>
+			<td>*req</td>
+		</tr>
+		<tr>
+			<td><label for="email">Email:</label></td>
+			<td><input type="email" id="email" placeholder="Enter valid e-mail!" required="required" /></td>
+			<td>*req</td>
+		</tr>
+		<tr>
+			<td><label for="sch">School:</label></td>
+			<td><input type="text" name="schoolName" id="sch" placeholder="School name" required="required" /></td>
+			<td>*req</td>
+		</tr>
+		<tr>
+			<td colspan="3"><input type="submit" name="submit" value="Submit!" /></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
